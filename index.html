@@ -11,14 +11,16 @@
     <div class="container">
         <div class="profile-container">
             <img src="chandanimg.jpg" alt="Profile Picture" class="profile-img">
-            <div class="profile-overlay"></div> <!-- Overlay div -->
+            <div class="profile-overlay"></div>
         </div>
         <h1>Chandan Gupta</h1>
-        <p>Web Developer | Frontend Enthusiast</p>
+        <p id="typing-text">Web Developer | Frontend Enthusiast</p>
+        
+        <button id="mode-toggle">Switch Mode</button>
         
         <div class="section" id="about">
             <h2>About Me</h2>
-            <p>Hi! I'm Chandan, a passionate frontend developer learnin React.js and UI/UX design.</p>
+            <p>Hi! I'm Chandan, a passionate frontend developer learning React.js and UI/UX design.</p>
         </div>
 
         <div class="section" id="skills">
@@ -41,28 +43,38 @@
                     <span>React.js</span>
                 </div>
             </div>
-        </div>
-
-       
-                 
-
-
-       
-        <div id="contactInfo" class="hidden">
-            <h2>Contact Information</h2>
-            <p>Email: chandangupta21092005@gmail.com</p>
-            <p>LinkedIn: www.linkedin.com/in/chandan-gupta7143</p>
-            <p> GitHub: https://github.com/chandangupta7143</p>
-
             
+            <div class="skill-bar">
+                <span>HTML</span>
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-bar">
+                <span>CSS</span>
+                <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-bar">
+                <span>JavaScript</span>
+                <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+            <div class="skill-bar">
+                <span>React.js</span>
+                <div class="skill-fill" style="width: 65%;"></div>
+            </div>
         </div>
-    </div>
 
-    <div id="lightbox" class="lightbox hidden">
-        <span class="close">&times;</span>
-        <div class="lightbox-content">
-            <h2 id="lightbox-title"></h2>
-            <p id="lightbox-description"></p>
+        <div id="contactInfo" class="fixed-contact left-side">
+            <h2>Contact</h2>
+            <div class="social-icons">
+                <a href="mailto:chandangupta21092005@gmail.com" class="icon email" style="font-size: 6rem;">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chandan-gupta7143" target="_blank" class="icon linkedin" style="font-size: 6rem;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/chandangupta7143" target="_blank" class="icon github" style="font-size: 6rem;">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </div>
 
