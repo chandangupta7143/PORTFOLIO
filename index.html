@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandan Gupta - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="profile-container">
             <img src="chandanimg.jpg" alt="Profile Picture" class="profile-img">
-            <div class="profile-overlay"></div>
         </div>
         <h1>Chandan Gupta</h1>
         <p id="typing-text">Web Developer | Frontend Enthusiast</p>
-        
-        <button id="mode-toggle">Switch Mode</button>
-        
+
         <div class="section" id="about">
             <h2>About Me</h2>
             <p>Hi! I'm Chandan, a passionate frontend developer learning React.js and UI/UX design.</p>
@@ -26,56 +23,28 @@
         <div class="section" id="skills">
             <h2>Skills</h2>
             <div class="skills-icons">
-                <div class="skill-icon">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML</span>
-                </div>
-                <div class="skill-icon">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS</span>
-                </div>
-                <div class="skill-icon">
-                    <i class="fab fa-js-square"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-icon">
-                    <i class="fab fa-react"></i>
-                    <span>React.js</span>
-                </div>
-            </div>
-            
-            <div class="skill-bar">
-                <span>HTML</span>
-                <div class="skill-fill" style="width: 90%;"></div>
-            </div>
-            <div class="skill-bar">
-                <span>CSS</span>
-                <div class="skill-fill" style="width: 85%;"></div>
-            </div>
-            <div class="skill-bar">
-                <span>JavaScript</span>
-                <div class="skill-fill" style="width: 75%;"></div>
-            </div>
-            <div class="skill-bar">
-                <span>React.js</span>
-                <div class="skill-fill" style="width: 65%;"></div>
+                <i class="fab fa-html5 skill-icon"></i>
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <i class="fab fa-js-square skill-icon"></i>
+                <i class="fab fa-react skill-icon"></i>
             </div>
         </div>
+    </div>
 
-        <div id="contactInfo" class="fixed-contact left-side">
-            <h2>Contact</h2>
-            <div class="social-icons">
-                <a href="mailto:chandangupta21092005@gmail.com" class="icon email" style="font-size: 6rem;">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/chandan-gupta7143" target="_blank" class="icon linkedin" style="font-size: 6rem;">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/chandangupta7143" target="_blank" class="icon github" style="font-size: 6rem;">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
+    <!-- Contact Info on Left Side -->
+    <div id="contactInfo" class="fixed-contact">
+        <a href="mailto:chandangupta21092005@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/chandan-gupta7143" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/chandangupta7143" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/chandan.gupta7143" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
 
     <script src="script.js"></script>

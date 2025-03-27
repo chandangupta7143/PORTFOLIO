@@ -1,147 +1,87 @@
+/* Body Styling */
 body {
-    font-family: 'Georgia', serif; /* Elegant font */
-    background: linear-gradient(to right, #171717, #243b55); /* Dark gradient for sophistication */
+    background-color: #000000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    color: #f8f8f8; /* Light text color for contrast */
+    font-family: 'Arial', sans-serif;
 }
 
+/* Main Container */
 .container {
     max-width: 800px;
     margin: 50px auto;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
-    backdrop-filter: blur(15px); /* Blur effect for elegance */
-    text-align: center; /* Center text and images */
+    padding: 20px;
+    text-align: center;
 }
 
+/* Profile Image */
 .profile-container {
-    position: relative; /* Positioning for overlay */
-    display: inline-block; /* Fit the image */
-    border-radius: 50%; /* Circular shape */
-    overflow: hidden; /* Hide overflow */
-    width: 160px; /* Set width */
-    height: 160px; /* Set height */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    margin: 0 auto; /* Center the container */
-    transition: transform 0.3s; /* Smooth transform */
-}
-
-.profile-container:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
 }
 
 .profile-img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    filter: brightness(0.9) contrast(1.1); /* Adjust brightness and contrast */
-    transition: filter 0.3s; /* Smooth filter transition */
+    width: 100%;
+    height: auto;
 }
 
-.profile-container:hover .profile-img {
-    filter: brightness(1) contrast(1.2); /* Brighten on hover */
-}
-
-.profile-overlay {
-    position: absolute; /* Overlay positioning */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3); /* Semi-transparent overlay */
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s; /* Smooth transition */
-}
-
-.profile-container:hover .profile-overlay {
-    opacity: 1; /* Show overlay on hover */
-}
-
-h1 {
-    font-size: 2.8em; /* Larger font size */
-    margin: 10px 0;
-    font-weight: bold; /* Bold for emphasis */
-}
-
-p {
-    font-size: 1.3em; /* Slightly larger font size */
-}
-
+/* Sections */
 .section {
     margin: 30px 0;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .section:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
 }
 
-h2 {
-    color: #ffcc00; /* Gold color for headings */
-    border-bottom: 2px solid #ffcc00; /* Gold underline */
-    padding-bottom: 10px;
-}
-
+/* Skills Icons */
 .skills-icons {
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Center the icons */
-    flex-wrap: wrap; /* Wrap icons if necessary */
-    margin-top: 20px; /* Space above icons */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .skill-icon {
-    margin: 15px; /* Space between icons */
-    text-align: center; /* Center text under icons */
-    color: #ffcc00; /* Gold color for icons */
-    font-size: 2em; /* Icon size */
-    transition: transform 0.3s; /* Smooth transform */
+    font-size: 2.5rem;
+    color: #ffcc00;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .skill-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.2);
+    color: #ffffff;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Fixed Contact Info */
+.fixed-contact {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-li {
-    background: rgba(255, 255, 255, 0.2); /* Light background for list items */
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    transition: background 
-    button {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        margin: 20px 0;
-        background-color: #ffcc00; /* Gold button */
-        color: #333; /* Dark text for contrast */
-        border: none;
-        border-radius: 5px;
-        font-size: 1.2em;
-        font-weight: bold; /* Bold text */
-        cursor: pointer;
-        transition: background 0.3s, transform 0.3s; /* Smooth transition */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    }
-    
-    button:hover {
-        background-color: #e6b800; /* Darker gold on hover */
-        transform: translateY(-2px); /* Lift effect on hover */
-    }
-    
-    #contactInfo {
-        background-color: rgba(255, 255, 255, 0.2); /* Light background for contact info */
-        padding: 20px; /* More padding for better spacing */
-        border-radius: 10px; /* Rounded corners */
-        border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
-        margin-top: 20px; /* Space above contact ⬤
+.fixed-contact a {
+    font-size: 2.5rem;
+    color: #ffffff;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.fixed-contact a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
