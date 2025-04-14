@@ -1,3 +1,4 @@
+/* Body Styles */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -11,27 +12,41 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+    padding-top: 120px; /* Moves content below navbar */
     text-align: center;
 }
 
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 80px;
+    }
+}
 
 /* Profile Image */
 .profile-container {
     display: inline-block;
-  
     border-radius: 50%;
     overflow: hidden;
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
     border: 4px solid #0f29a8;
-    box-shadow:  0 px rgba(255, 204, 0, 0.8);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
 }
 
 .profile-img {
     width: 100%;
     height: auto;
 }
+
+/* Button */
 .btn {
     display: inline-block;
     background-color: #ffcc00;
@@ -48,9 +63,7 @@ body {
     transform: translateY(-3px);
 }
 
-
-
-/* Sections */
+/* Section Styling */
 .section {
     margin: 30px 0;
     padding: 25px;
@@ -110,7 +123,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1); /* Box Background */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -130,8 +143,6 @@ body {
     color: #ffcc00;
 }
 
-
-
 /* Projects Section */
 .projects {
     margin-top: 50px;
@@ -146,6 +157,7 @@ body {
     padding-bottom: 8px;
     margin-bottom: 30px;
 }
+
 
 /* Project Cards */
 .project-card {
@@ -194,9 +206,10 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .project-card {
-        width: 95%;
+        width:85%;
     }
 }
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -239,17 +252,45 @@ body {
 .nav-links li a:hover {
     color: #ffcc00;
 }
+/* Hide burger icon by default */
+.nav-toggle {
+    display: none;
+  }
+  
+  /* Show burger icon only on mobile */
+  @media screen and (max-width: 768px) {
+    .nav-toggle {
+      display: block; /* Show burger icon only on small screens */
+      cursor: pointer; /* Change cursor to pointer when hovering over the icon */
+    }
+  }
+  
+  /* Nav links style (just for reference) */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  /* Optional: styling for nav-links when toggled */
+  .nav-links.active {
+    display: block; /* Show links if active (for mobile menu toggle) */
+  }
+  
 
-/* Responsive for Mobile */
+/* Responsive Navbar */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
-        background-color: #111;
+        background-color: #0d0c0d;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 0;
-        width: 200px;
+        width: 100px;
         display: none;
+        ont-family: 'Arial'; /* You can replace 'Arial' with any font family you prefer */
+        border: 2px solid rgb(81, 0, 255); /* 2px border with yellow color */
+    
     }
 
     .nav-links.active {
@@ -263,3 +304,7 @@ body {
         cursor: pointer;
     }
 }
+
+
+  
+  

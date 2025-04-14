@@ -12,15 +12,20 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">CHANDAN GUPTA </h1>
-            <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <div class="logo">CHANDAN GUPTA </div>
+      
+          <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+          </ul>
         </div>
-    </nav>
+      </nav>
+      
 
     <div class="container" id="profile">
         <div class="profile-container">
@@ -34,7 +39,7 @@
         <a href="https://drive.google.com/file/d/17FdwVQbRPyCMaR6_B_ySnRA4Ie9_zCDP/view?usp=sharing" class="btn"
             target="_blank">Download CV</a>
 
-        <div class="section">
+        <div class="section" id="about">
             <h2>About Me</h2>
             <p>"Hi! I'm Chandan, a passionate frontend developer with a keen eye for UI/UX design and a strong
                 foundation in React.js. I love crafting sleek, user-friendly web experiences that blend creativity with
@@ -115,6 +120,13 @@
 
 
         </div>
+        <script>
+            function toggleMenu() {
+              const navLinks = document.getElementById('navLinks');
+              navLinks.classList.toggle('active');
+            }
+          </script>
+          
 
 </body>
 
